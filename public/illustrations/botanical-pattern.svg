@@ -1,0 +1,54 @@
+<svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="patternGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6A0DAD"/>
+      <stop offset="100%" stop-color="#9D4EDD"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Scattered botanical elements for background pattern -->
+
+  <!-- Top left cluster -->
+  <g transform="translate(50, 60) rotate(-15)" opacity="0.08">
+    <path d="M0,-20 Q8,-15 5,-5 Q1,-1 0,0 Q-1,-1 -5,-5 Q-8,-15 0,-20" fill="url(#patternGrad)"/>
+    <path d="M0,-20 Q8,-15 5,-5 Q1,-1 0,0" fill="url(#patternGrad)" transform="rotate(72)"/>
+    <path d="M0,-20 Q8,-15 5,-5 Q1,-1 0,0" fill="url(#patternGrad)" transform="rotate(144)"/>
+    <path d="M0,-20 Q8,-15 5,-5 Q1,-1 0,0" fill="url(#patternGrad)" transform="rotate(216)"/>
+    <path d="M0,-20 Q8,-15 5,-5 Q1,-1 0,0" fill="url(#patternGrad)" transform="rotate(288)"/>
+  </g>
+
+  <!-- Top right leaf -->
+  <path d="M320,40 Q350,60 340,100 Q330,80 320,40" fill="#6A0DAD" opacity="0.06"/>
+
+  <!-- Center flower -->
+  <g transform="translate(200, 200) rotate(10)" opacity="0.05">
+    <path d="M0,-30 Q10,-22 7,-7 Q2,-2 0,0 Q-2,-2 -7,-7 Q-10,-22 0,-30" fill="url(#patternGrad)"/>
+    <path d="M0,-30 Q10,-22 7,-7 Q2,-2 0,0" fill="url(#patternGrad)" transform="rotate(72)"/>
+    <path d="M0,-30 Q10,-22 7,-7 Q2,-2 0,0" fill="url(#patternGrad)" transform="rotate(144)"/>
+    <path d="M0,-30 Q10,-22 7,-7 Q2,-2 0,0" fill="url(#patternGrad)" transform="rotate(216)"/>
+    <path d="M0,-30 Q10,-22 7,-7 Q2,-2 0,0" fill="url(#patternGrad)" transform="rotate(288)"/>
+  </g>
+
+  <!-- Bottom left vine curve -->
+  <path d="M20,350 Q60,320 100,350 Q140,380 180,350"
+        stroke="#9D4EDD" stroke-width="1.5" fill="none" opacity="0.07"/>
+
+  <!-- Bottom right cluster -->
+  <g transform="translate(340, 320) rotate(25)" opacity="0.06">
+    <path d="M0,-18 Q7,-13 4,-4 Q1,-1 0,0 Q-1,-1 -4,-4 Q-7,-13 0,-18" fill="url(#patternGrad)"/>
+    <path d="M0,-18 Q7,-13 4,-4" fill="url(#patternGrad)" transform="rotate(72)"/>
+    <path d="M0,-18 Q7,-13 4,-4" fill="url(#patternGrad)" transform="rotate(144)"/>
+    <path d="M0,-18 Q7,-13 4,-4" fill="url(#patternGrad)" transform="rotate(216)"/>
+    <path d="M0,-18 Q7,-13 4,-4" fill="url(#patternGrad)" transform="rotate(288)"/>
+  </g>
+
+  <!-- Scattered dots/petals -->
+  <circle cx="80" cy="180" r="6" fill="#6A0DAD" opacity="0.04"/>
+  <circle cx="320" cy="150" r="8" fill="#9D4EDD" opacity="0.05"/>
+  <circle cx="150" cy="300" r="5" fill="#6A0DAD" opacity="0.04"/>
+  <circle cx="280" cy="80" r="7" fill="#9D4EDD" opacity="0.03"/>
+
+  <!-- Small leaves -->
+  <path d="M100,120 Q115,110 120,130 Q105,125 100,120" fill="#6A0DAD" opacity="0.05"/>
+  <path d="M300,280 Q315,270 320,290 Q305,285 300,280" fill="#9D4EDD" opacity="0.06"/>
+</svg>

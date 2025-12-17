@@ -8,6 +8,7 @@
   --color-foreground: var(--foreground);
   --font-display: var(--font-jost), 'Jost', sans-serif;
   --font-body: var(--font-inter), 'Inter', sans-serif;
+  --font-handwriting: var(--font-handwriting), 'Amatic SC', cursive;
   --color-white: #FFFFFF;
   --color-light-gray: #F0F0F0;
   --color-violet: #6A0DAD;
@@ -49,12 +50,31 @@
 }
 
 :root {
-  /* Minimal Luxury Palette */
+  /* Botanische Spa Palette */
   --white: #FFFFFF;
-  --light-gray: #F0F0F0;
+  --cream: #FDF8F3;           /* Warmer Hintergrund */
+  --light-gray: #F8F6F9;
+  --blush: #F5E6E8;           /* Rosa Hauch */
+  --lavender-mist: #E9E4F0;   /* Heller Lavendel */
+
+  /* Lila-Palette (aus Logo) */
   --violet: #6A0DAD;
+  --violet-light: #8B5CF6;
+  --magenta: #9D4EDD;
+  --lavender: #E9D5FF;
+
+  /* Erdige Akzente */
+  --sage: #9CAF88;            /* Grün-Akzent */
+  --sage-light: #B8C9A8;
+
+  /* Neutrals */
   --anthracite: #1A1A1A;
   --medium-gray: #999999;
+
+  /* Gradienten */
+  --gradient-logo: linear-gradient(135deg, #6A0DAD 0%, #9D4EDD 50%, #C084FC 100%);
+  --gradient-warm: linear-gradient(135deg, #FDF8F3 0%, #E9E4F0 100%);
+  --gradient-soft: linear-gradient(180deg, rgba(106,13,173,0.05) 0%, rgba(157,78,221,0.02) 100%);
 
   --radius: 0;
   --background: #FFFFFF;
@@ -178,28 +198,45 @@
     border-color: #6A0DAD;
   }
 
-  /* Minimal button style */
+  /* Handwriting font - matches logo */
+  .font-handwriting {
+    font-family: var(--font-handwriting), 'Amatic SC', cursive;
+  }
+
+  /* Soft/flowy button style - rounded like spa/wellness */
   .btn-minimal {
     @apply px-8 py-3.5 border border-[#6A0DAD] text-[#6A0DAD] bg-transparent;
     @apply tracking-[0.1em] text-sm font-display;
     @apply transition-all duration-300 ease-out;
+    border-radius: 50px;
   }
 
   .btn-minimal:hover {
     @apply bg-[#6A0DAD] text-white;
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(106, 13, 173, 0.2);
   }
 
-  /* Filled button variant */
+  /* Filled button variant - soft gradient */
   .btn-filled {
-    @apply px-8 py-3.5 bg-[#6A0DAD] text-white;
+    @apply px-8 py-3.5 text-white;
     @apply tracking-[0.1em] text-sm font-display;
     @apply transition-all duration-300 ease-out;
+    background: var(--gradient-logo);
+    border-radius: 50px;
   }
 
   .btn-filled:hover {
-    @apply bg-[#5a0b93];
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(106, 13, 173, 0.3);
+  }
+
+  /* Gradient text like logo */
+  .text-gradient {
+    background: var(--gradient-logo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   /* Underline animation for nav */
@@ -262,4 +299,173 @@ html {
 ::selection {
   background-color: #6A0DAD;
   color: #FFFFFF;
+}
+
+/* ========================================
+   BOTANISCHE DESIGN UTILITIES
+   ======================================== */
+
+/* Botanische Hintergründe */
+.bg-cream {
+  background-color: var(--cream);
+}
+
+.bg-blush {
+  background-color: var(--blush);
+}
+
+.bg-lavender-mist {
+  background-color: var(--lavender-mist);
+}
+
+.bg-gradient-warm {
+  background: var(--gradient-warm);
+}
+
+.bg-gradient-soft {
+  background: var(--gradient-soft);
+}
+
+/* Botanisches Muster als Hintergrund */
+.bg-botanical {
+  background-image: url('/illustrations/botanical-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Weiche organische Schatten */
+.shadow-soft {
+  box-shadow: 0 4px 20px rgba(106, 13, 173, 0.08);
+}
+
+.shadow-botanical {
+  box-shadow:
+    0 4px 15px rgba(106, 13, 173, 0.06),
+    0 10px 40px rgba(157, 78, 221, 0.04);
+}
+
+/* Organische Border-Radien */
+.rounded-organic {
+  border-radius: 60% 40% 50% 50% / 50% 50% 40% 60%;
+}
+
+.rounded-blob {
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+/* Botanische Hover-Effekte */
+.hover-bloom {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.hover-bloom:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+/* Sanfte schwebende Animation */
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes petal-fall {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-gentle {
+  animation: float-gentle 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+/* Ranken-Unterstreichung für Nav */
+.nav-vine {
+  position: relative;
+}
+
+.nav-vine::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 8px;
+  background-image: url('/illustrations/vine.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  opacity: 0;
+}
+
+.nav-vine:hover::after {
+  width: 60px;
+  opacity: 1;
+}
+
+/* Blüten-Akzent Button */
+.btn-botanical {
+  @apply px-8 py-3.5 text-white relative overflow-hidden;
+  @apply tracking-[0.1em] text-sm font-display;
+  @apply transition-all duration-400 ease-out;
+  background: var(--gradient-logo);
+  border-radius: 50px;
+}
+
+.btn-botanical::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('/illustrations/frangipani-small.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.btn-botanical:hover::before {
+  transform: translateY(-50%) rotate(15deg) scale(1.1);
+}
+
+.btn-botanical {
+  padding-left: 40px;
+}
+
+.btn-botanical:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(106, 13, 173, 0.3);
 }

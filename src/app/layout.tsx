@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Jost, Inter } from "next/font/google";
+import { Jost, Inter, Amatic_SC } from "next/font/google";
 import "./globals.css";
 
 const jost = Jost({
@@ -13,6 +13,14 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+// Handwritten font matching the logo style
+const amatic = Amatic_SC({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-handwriting",
   display: "swap",
 });
 
@@ -53,7 +61,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body className={`${jost.variable} ${inter.variable} antialiased`}>
+      <body className={`${jost.variable} ${inter.variable} ${amatic.variable} antialiased`}>
         {children}
       </body>
     </html>

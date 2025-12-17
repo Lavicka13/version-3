@@ -1,0 +1,29 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="petalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6A0DAD"/>
+      <stop offset="100%" stop-color="#9D4EDD"/>
+    </linearGradient>
+  </defs>
+  <!-- Frangipani flower - 5 petals -->
+  <g transform="translate(50, 50)">
+    <!-- Petal 1 - top -->
+    <path d="M0,-35 Q12,-25 8,-8 Q2,-2 0,0 Q-2,-2 -8,-8 Q-12,-25 0,-35"
+          fill="url(#petalGradient)" opacity="0.9"/>
+    <!-- Petal 2 - top right -->
+    <path d="M0,-35 Q12,-25 8,-8 Q2,-2 0,0 Q-2,-2 -8,-8 Q-12,-25 0,-35"
+          fill="url(#petalGradient)" opacity="0.85" transform="rotate(72)"/>
+    <!-- Petal 3 - bottom right -->
+    <path d="M0,-35 Q12,-25 8,-8 Q2,-2 0,0 Q-2,-2 -8,-8 Q-12,-25 0,-35"
+          fill="url(#petalGradient)" opacity="0.8" transform="rotate(144)"/>
+    <!-- Petal 4 - bottom left -->
+    <path d="M0,-35 Q12,-25 8,-8 Q2,-2 0,0 Q-2,-2 -8,-8 Q-12,-25 0,-35"
+          fill="url(#petalGradient)" opacity="0.85" transform="rotate(216)"/>
+    <!-- Petal 5 - top left -->
+    <path d="M0,-35 Q12,-25 8,-8 Q2,-2 0,0 Q-2,-2 -8,-8 Q-12,-25 0,-35"
+          fill="url(#petalGradient)" opacity="0.9" transform="rotate(288)"/>
+    <!-- Center -->
+    <circle cx="0" cy="0" r="6" fill="#E9D5FF"/>
+    <circle cx="0" cy="0" r="3" fill="#9D4EDD"/>
+  </g>
+</svg>

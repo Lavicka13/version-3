@@ -1,0 +1,23 @@
+<svg viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6A0DAD" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#9D4EDD"/>
+      <stop offset="100%" stop-color="#6A0DAD" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Flowing vine curve -->
+  <path d="M0,50
+           Q30,20 60,50
+           Q90,80 120,50
+           Q150,20 180,50
+           Q195,65 200,50"
+        stroke="url(#vineGradient)"
+        stroke-width="2"
+        fill="none"
+        stroke-linecap="round"/>
+  <!-- Small leaves along the vine -->
+  <circle cx="45" cy="35" r="4" fill="#9D4EDD" opacity="0.3"/>
+  <circle cx="100" cy="65" r="3" fill="#6A0DAD" opacity="0.25"/>
+  <circle cx="155" cy="35" r="5" fill="#9D4EDD" opacity="0.35"/>
+</svg>
