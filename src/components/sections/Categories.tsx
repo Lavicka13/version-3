@@ -86,9 +86,6 @@ export function Categories() {
             <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-[#6A0DAD]/40" />
           </div>
 
-          <p className="text-[#6A0DAD] text-sm tracking-[0.3em] uppercase mb-4 font-light">
-            Die Insel-Behandlungen
-          </p>
           <h2 className="font-handwriting text-5xl md:text-6xl lg:text-7xl text-[#6A0DAD]">
             Angebote
           </h2>

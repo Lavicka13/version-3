@@ -97,7 +97,7 @@ export function Prices() {
             Preise
           </p>
           <h2 className="font-handwriting text-5xl md:text-6xl lg:text-7xl text-[#6A0DAD] mb-6">
-            Behandlungen
+            Die Inselbehandlungen
           </h2>
           <p className="text-[#1A1A1A]/60 font-light max-w-xl mx-auto">
             Alle Behandlungen werden mit hochwertigen Bio-Ölen und exklusiven SOTHYS Produkten durchgeführt.

@@ -104,8 +104,8 @@ export function Philosophy() {
 
           <p className="text-white/80 text-lg font-light leading-relaxed max-w-2xl mx-auto">
             In einer Welt, die nie still steht, schenke ich Ihnen einen Ort der Ruhe.
-            Hier zählt nur der Moment – Ihre persönliche Zeitinsel, auf der Schönheit
-            von innen nach außen strahlt.
+            Hier zählt nur der Moment – Ihre persönliche Zeitinsel, in der Körper und Geist
+            wieder in Balance kommen können.
           </p>
 
           {/* Bottom flower decoration */}
