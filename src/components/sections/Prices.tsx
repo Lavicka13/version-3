@@ -5,7 +5,23 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
 
-const priceCategories = [
+type Service = {
+  name: string;
+  price: string;
+  duration: string;
+  description?: string;
+  highlight?: boolean;
+};
+
+type PriceCategory = {
+  id: string;
+  title: string;
+  subtitle: string;
+  services: Service[];
+  note?: string;
+};
+
+const priceCategories: PriceCategory[] = [
   {
     id: "gesicht",
     title: "Gesichtsbehandlungen",
