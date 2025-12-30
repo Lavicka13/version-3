@@ -48,7 +48,7 @@ export function About() {
             {/* Image container with organic shape */}
             <div className="relative aspect-[3/4] overflow-hidden rounded-[30%_5%_30%_5%_/_5%_30%_5%_30%] shadow-botanical">
               <Image
-                src="/images/collage.jpg"
+                src="/images/ruth.png"
                 alt="Ruth-A. Schwendtner - Ihre Expertin für Kosmetik und Wellness"
                 fill
                 className="object-cover object-top"
@@ -117,20 +117,26 @@ export function About() {
 
             <div className="space-y-5 text-[#1A1A1A]/80 font-light leading-relaxed">
               <p>
-                Seit über 20 Jahren ist es meine Berufung, Menschen einen Ort
-                der Ruhe zu schenken. Die Zeitinsel entstand aus der
-                Überzeugung, dass wahre Schönheit von innen kommt – und Zeit
-                braucht.
+                Es bereitet mir große Freude, Menschen durch gezielte Schönheits- und
+                Wellnessbehandlungen eine entspannende Pause vom Alltag und Momente puren
+                Wohlempfindens zu ermöglichen.
               </p>
               <p>
-                Als zertifizierte Kosmetikerin und Wellness-Massagetherapeutin
-                verbinde ich fachliche Expertise mit einem tiefen Verständnis
-                für individuelle Bedürfnisse.
+                Die Zeitinsel entstand aus dem Wunsch heraus, einen Ort zu schaffen, an dem die
+                hektische Welt draußen bleibt, um genau diese Momente bis zur Tiefenentspanntheit
+                genießen zu können.
               </p>
               <p>
-                Mit exklusiven SOTHYS Paris Produkten und einem Gespür für das,
-                was Sie wirklich brauchen, begleite ich Sie auf Ihrer
-                persönlichen Reise zu Wohlbefinden.
+                Als Kosmetikerin und Wellness-Massagetherapeutin verbinde ich fachliche Expertise
+                mit einem tiefen Verständnis für individuelle Bedürfnisse.
+              </p>
+              <p>
+                Mit exklusiven Hautpflegeprodukten von SOTHYS Paris und wertvollen Bio-Ölen
+                begleite ich Sie auf Ihrer Reise zu persönlichem Wohlbefinden.
+              </p>
+              <p>
+                Mit neuer Energie und trotzdem tiefenentspannt können Sie dem Alltag mit einem
+                Lächeln begegnen.
               </p>
             </div>
 
@@ -144,7 +150,6 @@ export function About() {
               {[
                 { value: "20+", label: "Jahre Erfahrung" },
                 { value: "SOTHYS", label: "Paris Partner" },
-                { value: "IHK", label: "Zertifiziert" },
               ].map((stat, index) => (
                 <motion.div
                   key={stat.label}

@@ -8,32 +8,29 @@ import Image from "next/image";
 const priceCategories = [
   {
     id: "gesicht",
-    title: "Gesicht",
+    title: "Gesichtsbehandlungen",
     subtitle: "SOTHYS Paris Treatments",
     services: [
-      { name: "SOTHYS DX Glow Behandlung", price: "79€", duration: "60 Min", highlight: true },
-      { name: "Basis Gesichtspflege", price: "59€", duration: "45 Min" },
-      { name: "Anti-Aging Premium", price: "99€", duration: "75 Min" },
+      { name: "Basisbehandlung", description: "Auf Sie abgestimmte Pflege", price: "80€", duration: "70 Min" },
+      { name: "DX-Glow-Intensivbehandlung", description: "6 Pflegephasen für strahlende Haut", price: "135€", duration: "80 Min", highlight: true },
+      { name: "Feuchtigkeitsspendende Intensivbehandlung", description: "Aufpolstern & neuer Glow", price: "135€", duration: "85 Min" },
+      { name: "Intensivbehandlung Jeunesse Tri-Complex", description: "Falten ade! Bis zu 6 Jahre jünger", price: "139€", duration: "85 Min", highlight: true },
+      { name: "Saisonbehandlung Oxygenant", description: "Mehr Ausstrahlung", price: "75€", duration: "45 Min" },
+      { name: "Doppel-Peeling-Behandlung", description: "Klarer, ebenmäßiger Teint", price: "89€", duration: "50 Min" },
     ],
+    note: "Intensivbehandlungen auch als 3er-Kur empfohlen",
   },
   {
     id: "massage",
-    title: "Massage",
+    title: "Wohlfühlmassagen",
     subtitle: "Wellness & Entspannung",
     services: [
-      { name: "Wellness-Rückenmassage", price: "35€", duration: "30 Min" },
-      { name: "Wellness-Rückenmassage", price: "65€", duration: "60 Min", highlight: true },
-      { name: "Kopf & Nacken Entspannung", price: "40€", duration: "30 Min" },
-    ],
-  },
-  {
-    id: "spezial",
-    title: "Spezial",
-    subtitle: "Premium Behandlungen",
-    services: [
-      { name: "Ayurveda Ganzkörpermassage", price: "85€", duration: "75 Min", highlight: true },
-      { name: "Hot Stone Massage", price: "75€", duration: "60 Min" },
-      { name: "Geschenk-Gutschein", price: "nach Wahl", duration: "" },
+      { name: "Gesichtsmassage", price: "35€", duration: "30 Min" },
+      { name: "Kopf-/Nackenmassage", price: "35€", duration: "30 Min" },
+      { name: "Schultermassage", price: "40€", duration: "30 Min" },
+      { name: "Rückenmassage", price: "40€", duration: "30 Min" },
+      { name: "Klassische Ganzkörpermassage", price: "70€ / 80€", duration: "60 / 75 Min", highlight: true },
+      { name: "Ayurveda Ganzkörpermassage", price: "85€ / 95€", duration: "60 / 75 Min", highlight: true },
     ],
   },
 ];
@@ -108,7 +105,7 @@ export function Prices() {
         </motion.div>
 
         {/* Price Cards Grid - Botanical Style */}
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-10 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto items-stretch">
           {priceCategories.map((category, categoryIndex) => (
             <motion.div
               key={category.id}
@@ -119,7 +116,7 @@ export function Prices() {
                 delay: categoryIndex * 0.1,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="group bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-botanical hover:shadow-lg transition-shadow duration-500"
+              className="group bg-white/80 backdrop-blur-sm rounded-3xl p-6 shadow-botanical hover:shadow-lg transition-shadow duration-500 h-full flex flex-col"
             >
               {/* Category Header with flower icon */}
               <div className="text-center mb-6 pb-4 border-b border-[#E9D5FF]">
@@ -139,7 +136,7 @@ export function Prices() {
               </div>
 
               {/* Services List - Botanical bullets */}
-              <div className="space-y-3">
+              <div className="space-y-3 flex-1">
                 {category.services.map((service, serviceIndex) => (
                   <motion.div
                     key={`${service.name}-${service.price}`}
@@ -149,7 +146,7 @@ export function Prices() {
                       duration: 0.4,
                       delay: categoryIndex * 0.1 + serviceIndex * 0.05 + 0.2,
                     }}
-                    className={`p-4 rounded-2xl transition-all duration-300 ${
+                    className={`p-4 rounded-2xl transition-all duration-300 md:min-h-[100px] ${
                       service.highlight
                         ? "bg-gradient-to-r from-[#E9D5FF]/40 to-[#E9E4F0]/30 border border-[#6A0DAD]/20"
                         : "bg-[#FDF8F3]/50 hover:bg-[#E9D5FF]/20"
@@ -167,19 +164,31 @@ export function Prices() {
                             {service.name}
                           </p>
                         </div>
+                        {service.description && (
+                          <p className="text-[#1A1A1A]/50 text-xs mt-1 ml-5 italic">
+                            {service.description}
+                          </p>
+                        )}
                         {service.duration && (
                           <p className="text-[#9D4EDD]/60 text-xs mt-1 ml-5">
                             {service.duration}
                           </p>
                         )}
                       </div>
-                      <p className={`font-handwriting text-2xl ${service.highlight ? "text-[#6A0DAD]" : "text-[#9D4EDD]"}`}>
+                      <p className={`font-handwriting text-xl whitespace-nowrap ${service.highlight ? "text-[#6A0DAD]" : "text-[#9D4EDD]"}`}>
                         {service.price}
                       </p>
                     </div>
                   </motion.div>
                 ))}
               </div>
+
+              {/* Category Note */}
+              {category.note && (
+                <p className="text-[#6A0DAD]/60 text-xs text-center mt-4 italic">
+                  {category.note}
+                </p>
+              )}
             </motion.div>
           ))}
         </div>

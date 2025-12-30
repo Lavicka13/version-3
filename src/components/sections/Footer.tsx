@@ -68,6 +68,15 @@ export function Footer() {
               für Schönheit und Wohlbefinden.
             </p>
 
+            <div className="mt-4">
+              <p className="text-[#6A0DAD] text-sm font-normal">
+                Ruth-A. Schwendtner
+              </p>
+              <p className="text-[#1A1A1A]/50 text-xs font-light">
+                Kosmetikerin & Wellness-Massagetherapeutin
+              </p>
+            </div>
+
             {/* Small vine decoration */}
             <div className="mt-4 h-3 w-24 opacity-15 relative">
               <Image src="/illustrations/vine.svg" alt="" fill className="object-contain" />

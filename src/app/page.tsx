@@ -5,6 +5,7 @@ import { Prices } from "@/components/sections/Prices";
 import { Philosophy } from "@/components/sections/Philosophy";
 import { About } from "@/components/sections/About";
 import { Quote } from "@/components/sections/Quote";
+import { FAQ } from "@/components/sections/FAQ";
 import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Philosophy />
       <About />
       <Quote />
+      <FAQ />
       <Contact />
       <Footer />
     </main>

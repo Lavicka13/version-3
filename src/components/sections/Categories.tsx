@@ -87,7 +87,7 @@ export function Categories() {
           </div>
 
           <p className="text-[#6A0DAD] text-sm tracking-[0.3em] uppercase mb-4 font-light">
-            Unsere Leistungen
+            Die Insel-Behandlungen
           </p>
           <h2 className="font-handwriting text-5xl md:text-6xl lg:text-7xl text-[#6A0DAD]">
             Angebote

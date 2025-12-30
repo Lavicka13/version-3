@@ -198,6 +198,12 @@ export function Hero() {
           <p className="font-handwriting text-4xl md:text-5xl lg:text-6xl text-[#6A0DAD]">
             Ihre Auszeit beginnt hier
           </p>
+          <p className="font-handwriting text-3xl md:text-4xl text-[#6A0DAD]/80 mt-3">
+            Wo französischer Luxus auf persönliche Herzlichkeit trifft
+          </p>
+          <p className="font-handwriting text-2xl md:text-3xl text-[#6A0DAD]/60 mt-6">
+            Dein Ankerplatz für Schönheit und Ruhe
+          </p>
 
           {/* Small flower right */}
           <motion.div
