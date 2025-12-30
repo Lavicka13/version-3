@@ -145,7 +145,7 @@ export function Testimonials() {
             </button>
 
             {/* Testimonial Card */}
-            <div className="bg-white/90 backdrop-blur-sm rounded-[2rem] shadow-botanical p-8 md:p-12 min-h-[320px] flex flex-col justify-center overflow-hidden">
+            <div className="bg-white/90 backdrop-blur-sm rounded-[2rem] shadow-botanical p-8 md:p-12 h-[420px] md:h-[380px] flex flex-col justify-center overflow-hidden relative">
               {/* Large quote mark */}
               <div className="absolute top-6 left-8 opacity-10">
                 <span className="font-handwriting text-[120px] text-[#6A0DAD] leading-none">&ldquo;</span>
