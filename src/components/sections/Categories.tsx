@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import { SothysText } from "@/components/common/SothysText";
 
 const categories = [
   {
@@ -140,12 +141,12 @@ export function Categories() {
                     {category.title}
                   </h3>
                   <p className="text-[#9D4EDD] text-sm tracking-[0.15em] font-light">
-                    {category.subtitle}
+                    <SothysText>{category.subtitle}</SothysText>
                   </p>
                 </div>
 
                 <p className="text-[#1A1A1A]/70 font-light leading-relaxed">
-                  {category.description}
+                  <SothysText>{category.description}</SothysText>
                 </p>
 
                 {/* Services List - Botanical bullets */}

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import { SothysText } from "@/components/common/SothysText";
 
 type Service = {
   name: string;
@@ -116,7 +117,7 @@ export function Prices() {
             Die Inselbehandlungen
           </h2>
           <p className="text-[#1A1A1A]/60 font-light max-w-xl mx-auto">
-            Alle Behandlungen werden mit hochwertigen Bio-Ölen und exklusiven SOTHYS Produkten durchgeführt.
+            <SothysText>Alle Behandlungen werden mit hochwertigen Bio-Ölen und exklusiven SOTHYS Produkten durchgeführt.</SothysText>
           </p>
         </motion.div>
 
@@ -147,7 +148,7 @@ export function Prices() {
                   {category.title}
                 </h3>
                 <p className="text-[#9D4EDD] text-xs tracking-[0.15em] font-light">
-                  {category.subtitle}
+                  <SothysText iconSize={12}>{category.subtitle}</SothysText>
                 </p>
               </div>
 

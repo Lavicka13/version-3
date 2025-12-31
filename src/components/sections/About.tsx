@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Image from "next/image";
+import { SothysText } from "@/components/common/SothysText";
 
 export function About() {
   const ref = useRef(null);
@@ -131,8 +132,7 @@ export function About() {
                 mit einem tiefen Verständnis für individuelle Bedürfnisse.
               </p>
               <p>
-                Mit exklusiven Hautpflegeprodukten von SOTHYS Paris und wertvollen Bio-Ölen
-                begleite ich Sie auf Ihrer Reise zu persönlichem Wohlbefinden.
+                <SothysText>Mit exklusiven Hautpflegeprodukten von SOTHYS Paris und wertvollen Bio-Ölen begleite ich Sie auf Ihrer Reise zu persönlichem Wohlbefinden.</SothysText>
               </p>
               <p>
                 Mit neuer Energie und trotzdem tiefenentspannt können Sie dem Alltag mit einem
@@ -166,7 +166,7 @@ export function About() {
                   >
                     <Image src="/illustrations/frangipani-small.svg" alt="" width={20} height={20} />
                   </motion.div>
-                  <p className="font-handwriting text-3xl text-[#6A0DAD]">{stat.value}</p>
+                  <p className="font-handwriting text-3xl text-[#6A0DAD]"><SothysText iconSize={20}>{stat.value}</SothysText></p>
                   <p className="text-[#9D4EDD]/70 text-xs tracking-wider mt-1">{stat.label}</p>
                 </motion.div>
               ))}
