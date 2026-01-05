@@ -33,7 +33,7 @@ export default function Impressum() {
               Angaben gemäß § 5 TMG
             </h2>
             <p className="text-[#1A1A1A]/80 font-light leading-relaxed">
-              Ruth-A. Schwendtner<br />
+              Ruth-Annette Schwendtner<br />
               Schönheitspflege und Wellnessmassagen<br />
               Im Pfandwasen 25<br />
               74572 Blaufelden
