@@ -9,7 +9,7 @@ import Image from "next/image";
 const contactInfo = [
   {
     icon: Phone,
-    label: "Telefon",
+    label: "Telefon / WhatsApp",
     value: "0151 708 36 557",
     href: "tel:+4915170836557",
   },
@@ -28,7 +28,7 @@ const contactInfo = [
   {
     icon: Clock,
     label: "Termine",
-    value: "Nach Vereinbarung",
+    value: "Mo–Sa nach Vereinbarung",
     href: null,
   },
 ];

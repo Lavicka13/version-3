@@ -16,6 +16,7 @@ const testimonials = [
     text: "Die Wellness-Zeitinsel ist ein traumhaft schönes Gefühl für mich gewesen. Mit besinnlicher Musik, schönem Duft und den warmen Händen der Masseurin Ruth, konnte ich richtig gut abschalten um die Massage mit allen Sinnen zu genießen. Die Masseurin kennt sich in ihrem Geschäft gut aus. Sie achtet auf Kleinigkeiten und geht fachkundig auf den Behandelnden ein. Selbst in der Nacht, nach der Massage, schläft man wie ein Baby. Ich kann sie nur wärmstens weiterempfehlen!",
     author: "Edeltraud F.",
     date: "November 2025",
+    long: true,
   },
   {
     text: "Super tolle Massage – man fühlt sich direkt wohl bei ihr und nach der Massage fühlt man sich auch erholt. Ich komme auf jeden Fall wieder!",
@@ -163,7 +164,11 @@ export function Testimonials() {
                   className="relative z-10"
                 >
                   {/* Quote text */}
-                  <p className="text-[#1A1A1A]/80 font-light text-lg md:text-xl leading-relaxed text-center mb-8 italic">
+                  <p className={`text-[#1A1A1A]/80 font-light leading-relaxed text-center mb-8 italic ${
+                    testimonials[current].long
+                      ? "text-[13px] sm:text-sm md:text-lg"
+                      : "text-sm sm:text-base md:text-xl"
+                  }`}>
                     &ldquo;{testimonials[current].text}&rdquo;
                   </p>
 

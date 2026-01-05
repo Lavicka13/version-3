@@ -34,7 +34,7 @@ export default function Impressum() {
             </h2>
             <p className="text-[#1A1A1A]/80 font-light leading-relaxed">
               Ruth-A. Schwendtner<br />
-              Zeitinsel - Kosmetik & Wellness<br />
+              Schönheitspflege und Wellnessmassagen<br />
               Im Pfandwasen 25<br />
               74572 Blaufelden
             </p>

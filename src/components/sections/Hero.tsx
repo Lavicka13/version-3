@@ -202,7 +202,7 @@ export function Hero() {
             Wo französischer Luxus auf persönliche Herzlichkeit trifft
           </p>
           <p className="font-handwriting text-2xl md:text-3xl text-[#6A0DAD]/60 mt-6">
-            Dein Ankerplatz für Schönheit und Ruhe
+            Ihr Ankerplatz für Schönheit und Ruhe
           </p>
 
           {/* Small flower right */}

@@ -148,7 +148,6 @@ export function About() {
               className="mt-10 pt-8 border-t border-[#E9D5FF] flex flex-wrap gap-8"
             >
               {[
-                { value: "20+", label: "Jahre Erfahrung" },
                 { value: "SOTHYS", label: "Paris Partner" },
               ].map((stat, index) => (
                 <motion.div

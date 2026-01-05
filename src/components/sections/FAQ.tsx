@@ -12,7 +12,7 @@ const faqs = [
   },
   {
     question: "Muss ich mich komplett ausziehen?",
-    answer: "Nein, der Slip bleibt an. Bei Bedarf kann auch der BH anbehalten werden.",
+    answer: "Nein, Slip und BH bleiben an.",
   },
   {
     question: "Wie lange dauert eine Behandlung?",
@@ -24,7 +24,7 @@ const faqs = [
   },
   {
     question: "Ist der Salon barrierefrei?",
-    answer: "Nein, leider befinden sich die Räumlichkeiten in der 1. Etage (Treppen).",
+    answer: "Nein, leider befinden sich die Räumlichkeiten in der 1. Etage (Treppen). Es sind jedoch Hausbesuche möglich.",
   },
 ];
 
