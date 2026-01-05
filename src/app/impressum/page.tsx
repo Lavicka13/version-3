@@ -19,7 +19,7 @@ export default function Impressum() {
             <span>←</span>
             <span className="text-sm">Zurück zur Startseite</span>
           </Link>
-          <h1 className="font-handwriting text-5xl md:text-6xl text-[#6A0DAD]">
+          <h1 className="font-handwriting text-5xl md:text-6xl text-[#6A0DAD] text-center">
             Impressum
           </h1>
         </div>
