@@ -39,6 +39,12 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Ruth-A. Schwendtner" }],
   creator: "Zeitinsel",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "ZEITINSEL | Luxus-Kosmetik & Wellness",
     description:
